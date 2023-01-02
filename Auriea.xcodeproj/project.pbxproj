@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E5FB357C296484DB004E465B /* AurieaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FB357B296484DB004E465B /* AurieaApp.swift */; };
+		E5FB357E296484DB004E465B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FB357D296484DB004E465B /* ContentView.swift */; };
+		E5FB3580296484DC004E465B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5FB357F296484DC004E465B /* Assets.xcassets */; };
+		E5FB3583296484DC004E465B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5FB3582296484DC004E465B /* Preview Assets.xcassets */; };
+		E5FB358E296484DC004E465B /* AurieaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FB358D296484DC004E465B /* AurieaTests.swift */; };
+		E5FB3598296484DD004E465B /* AurieaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FB3597296484DD004E465B /* AurieaUITests.swift */; };
+		E5FB359A296484DD004E465B /* AurieaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FB3599296484DD004E465B /* AurieaUITestsLaunchTests.swift */; };
+		E5FB35AA29648580004E465B /* SingleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FB35A929648580004E465B /* SingleModifier.swift */; };
+		E5FB35AC2964858D004E465B /* ModifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FB35AB2964858D004E465B /* ModifierView.swift */; };
+		E5FB35AE2964859E004E465B /* FilmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FB35AD2964859E004E465B /* FilmView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E5FB358A296484DC004E465B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5FB3570296484DB004E465B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5FB3577296484DB004E465B;
+			remoteInfo = Auriea;
+		};
+		E5FB3594296484DD004E465B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5FB3570296484DB004E465B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5FB3577296484DB004E465B;
+			remoteInfo = Auriea;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E5FB3578296484DB004E465B /* Auriea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Auriea.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5FB357B296484DB004E465B /* AurieaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AurieaApp.swift; sourceTree = "<group>"; };
+		E5FB357D296484DB004E465B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E5FB357F296484DC004E465B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E5FB3582296484DC004E465B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E5FB3584296484DC004E465B /* Auriea.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Auriea.entitlements; sourceTree = "<group>"; };
+		E5FB3589296484DC004E465B /* AurieaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AurieaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5FB358D296484DC004E465B /* AurieaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AurieaTests.swift; sourceTree = "<group>"; };
+		E5FB3593296484DD004E465B /* AurieaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AurieaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5FB3597296484DD004E465B /* AurieaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AurieaUITests.swift; sourceTree = "<group>"; };
+		E5FB3599296484DD004E465B /* AurieaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AurieaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E5FB35A929648580004E465B /* SingleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleModifier.swift; sourceTree = "<group>"; };
+		E5FB35AB2964858D004E465B /* ModifierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierView.swift; sourceTree = "<group>"; };
+		E5FB35AD2964859E004E465B /* FilmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E5FB3575296484DB004E465B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5FB3586296484DC004E465B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5FB3590296484DD004E465B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E5FB356F296484DB004E465B = {
+			isa = PBXGroup;
+			children = (
+				E5FB357A296484DB004E465B /* Auriea */,
+				E5FB358C296484DC004E465B /* AurieaTests */,
+				E5FB3596296484DD004E465B /* AurieaUITests */,
+				E5FB3579296484DB004E465B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E5FB3579296484DB004E465B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5FB3578296484DB004E465B /* Auriea.app */,
+				E5FB3589296484DC004E465B /* AurieaTests.xctest */,
+				E5FB3593296484DD004E465B /* AurieaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E5FB357A296484DB004E465B /* Auriea */ = {
+			isa = PBXGroup;
+			children = (
+				E5FB35A62964850E004E465B /* View */,
+				E5FB357B296484DB004E465B /* AurieaApp.swift */,
+				E5FB357F296484DC004E465B /* Assets.xcassets */,
+				E5FB3584296484DC004E465B /* Auriea.entitlements */,
+				E5FB3581296484DC004E465B /* Preview Content */,
+			);
+			path = Auriea;
+			sourceTree = "<group>";
+		};
+		E5FB3581296484DC004E465B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E5FB3582296484DC004E465B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E5FB358C296484DC004E465B /* AurieaTests */ = {
+			isa = PBXGroup;
+			children = (
+				E5FB358D296484DC004E465B /* AurieaTests.swift */,
+			);
+			path = AurieaTests;
+			sourceTree = "<group>";
+		};
+		E5FB3596296484DD004E465B /* AurieaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E5FB3597296484DD004E465B /* AurieaUITests.swift */,
+				E5FB3599296484DD004E465B /* AurieaUITestsLaunchTests.swift */,
+			);
+			path = AurieaUITests;
+			sourceTree = "<group>";
+		};
+		E5FB35A62964850E004E465B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E5FB357D296484DB004E465B /* ContentView.swift */,
+				E5FB35A929648580004E465B /* SingleModifier.swift */,
+				E5FB35AB2964858D004E465B /* ModifierView.swift */,
+				E5FB35AD2964859E004E465B /* FilmView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E5FB3577296484DB004E465B /* Auriea */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5FB359D296484DD004E465B /* Build configuration list for PBXNativeTarget "Auriea" */;
+			buildPhases = (
+				E5FB3574296484DB004E465B /* Sources */,
+				E5FB3575296484DB004E465B /* Frameworks */,
+				E5FB3576296484DB004E465B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Auriea;
+			productName = Auriea;
+			productReference = E5FB3578296484DB004E465B /* Auriea.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E5FB3588296484DC004E465B /* AurieaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5FB35A0296484DD004E465B /* Build configuration list for PBXNativeTarget "AurieaTests" */;
+			buildPhases = (
+				E5FB3585296484DC004E465B /* Sources */,
+				E5FB3586296484DC004E465B /* Frameworks */,
+				E5FB3587296484DC004E465B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5FB358B296484DC004E465B /* PBXTargetDependency */,
+			);
+			name = AurieaTests;
+			productName = AurieaTests;
+			productReference = E5FB3589296484DC004E465B /* AurieaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E5FB3592296484DD004E465B /* AurieaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5FB35A3296484DD004E465B /* Build configuration list for PBXNativeTarget "AurieaUITests" */;
+			buildPhases = (
+				E5FB358F296484DD004E465B /* Sources */,
+				E5FB3590296484DD004E465B /* Frameworks */,
+				E5FB3591296484DD004E465B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5FB3595296484DD004E465B /* PBXTargetDependency */,
+			);
+			name = AurieaUITests;
+			productName = AurieaUITests;
+			productReference = E5FB3593296484DD004E465B /* AurieaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E5FB3570296484DB004E465B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					E5FB3577296484DB004E465B = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					E5FB3588296484DC004E465B = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = E5FB3577296484DB004E465B;
+					};
+					E5FB3592296484DD004E465B = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = E5FB3577296484DB004E465B;
+					};
+				};
+			};
+			buildConfigurationList = E5FB3573296484DB004E465B /* Build configuration list for PBXProject "Auriea" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E5FB356F296484DB004E465B;
+			productRefGroup = E5FB3579296484DB004E465B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5FB3577296484DB004E465B /* Auriea */,
+				E5FB3588296484DC004E465B /* AurieaTests */,
+				E5FB3592296484DD004E465B /* AurieaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E5FB3576296484DB004E465B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5FB3583296484DC004E465B /* Preview Assets.xcassets in Resources */,
+				E5FB3580296484DC004E465B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5FB3587296484DC004E465B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5FB3591296484DD004E465B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E5FB3574296484DB004E465B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5FB357E296484DB004E465B /* ContentView.swift in Sources */,
+				E5FB357C296484DB004E465B /* AurieaApp.swift in Sources */,
+				E5FB35AA29648580004E465B /* SingleModifier.swift in Sources */,
+				E5FB35AE2964859E004E465B /* FilmView.swift in Sources */,
+				E5FB35AC2964858D004E465B /* ModifierView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5FB3585296484DC004E465B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5FB358E296484DC004E465B /* AurieaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5FB358F296484DD004E465B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5FB3598296484DD004E465B /* AurieaUITests.swift in Sources */,
+				E5FB359A296484DD004E465B /* AurieaUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E5FB358B296484DC004E465B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5FB3577296484DB004E465B /* Auriea */;
+			targetProxy = E5FB358A296484DC004E465B /* PBXContainerItemProxy */;
+		};
+		E5FB3595296484DD004E465B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5FB3577296484DB004E465B /* Auriea */;
+			targetProxy = E5FB3594296484DD004E465B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E5FB359B296484DD004E465B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E5FB359C296484DD004E465B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		E5FB359E296484DD004E465B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Auriea/Auriea.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Auriea/Preview Content\"";
+				DEVELOPMENT_TEAM = SAZ52TV6LX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Hotaria.Auriea;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E5FB359F296484DD004E465B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Auriea/Auriea.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Auriea/Preview Content\"";
+				DEVELOPMENT_TEAM = SAZ52TV6LX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Hotaria.Auriea;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E5FB35A1296484DD004E465B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SAZ52TV6LX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Hotaria.AurieaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Auriea.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Auriea";
+			};
+			name = Debug;
+		};
+		E5FB35A2296484DD004E465B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SAZ52TV6LX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Hotaria.AurieaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Auriea.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Auriea";
+			};
+			name = Release;
+		};
+		E5FB35A4296484DD004E465B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SAZ52TV6LX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Hotaria.AurieaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Auriea;
+			};
+			name = Debug;
+		};
+		E5FB35A5296484DD004E465B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SAZ52TV6LX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Hotaria.AurieaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Auriea;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E5FB3573296484DB004E465B /* Build configuration list for PBXProject "Auriea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5FB359B296484DD004E465B /* Debug */,
+				E5FB359C296484DD004E465B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5FB359D296484DD004E465B /* Build configuration list for PBXNativeTarget "Auriea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5FB359E296484DD004E465B /* Debug */,
+				E5FB359F296484DD004E465B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5FB35A0296484DD004E465B /* Build configuration list for PBXNativeTarget "AurieaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5FB35A1296484DD004E465B /* Debug */,
+				E5FB35A2296484DD004E465B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5FB35A3296484DD004E465B /* Build configuration list for PBXNativeTarget "AurieaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5FB35A4296484DD004E465B /* Debug */,
+				E5FB35A5296484DD004E465B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E5FB3570296484DB004E465B /* Project object */;
+}
