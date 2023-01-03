@@ -9,8 +9,13 @@ import SwiftUI
 
 struct FilmView: View {
     var body: some View {
-        Button("Open...") {
-            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+        
+        VStack {
+            Image(systemName:"plus.circle")
+                .resizable()
+            .frame(width: 100, height: 100)
+            Text("Open...")
+                .font(.headline)
         }
     }
 }
