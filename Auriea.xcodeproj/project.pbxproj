@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E5E30B9429654536004A0F8B /* LenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E30B9329654536004A0F8B /* LenView.swift */; };
 		E5FB357C296484DB004E465B /* AurieaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FB357B296484DB004E465B /* AurieaApp.swift */; };
 		E5FB357E296484DB004E465B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FB357D296484DB004E465B /* ContentView.swift */; };
 		E5FB3580296484DC004E465B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5FB357F296484DC004E465B /* Assets.xcassets */; };
@@ -15,7 +16,7 @@
 		E5FB3598296484DD004E465B /* AurieaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FB3597296484DD004E465B /* AurieaUITests.swift */; };
 		E5FB359A296484DD004E465B /* AurieaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FB3599296484DD004E465B /* AurieaUITestsLaunchTests.swift */; };
 		E5FB35AA29648580004E465B /* SingleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FB35A929648580004E465B /* SingleModifier.swift */; };
-		E5FB35AC2964858D004E465B /* ModifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FB35AB2964858D004E465B /* ModifierView.swift */; };
+		E5FB35AC2964858D004E465B /* ModifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FB35AB2964858D004E465B /* ModifyView.swift */; };
 		E5FB35AE2964859E004E465B /* FilmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FB35AD2964859E004E465B /* FilmView.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E5E30B9329654536004A0F8B /* LenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LenView.swift; sourceTree = "<group>"; };
 		E5FB3578296484DB004E465B /* Auriea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Auriea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5FB357B296484DB004E465B /* AurieaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AurieaApp.swift; sourceTree = "<group>"; };
 		E5FB357D296484DB004E465B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,7 +51,7 @@
 		E5FB3597296484DD004E465B /* AurieaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AurieaUITests.swift; sourceTree = "<group>"; };
 		E5FB3599296484DD004E465B /* AurieaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AurieaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E5FB35A929648580004E465B /* SingleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleModifier.swift; sourceTree = "<group>"; };
-		E5FB35AB2964858D004E465B /* ModifierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierView.swift; sourceTree = "<group>"; };
+		E5FB35AB2964858D004E465B /* ModifyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyView.swift; sourceTree = "<group>"; };
 		E5FB35AD2964859E004E465B /* FilmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,8 +142,9 @@
 			children = (
 				E5FB357D296484DB004E465B /* ContentView.swift */,
 				E5FB35A929648580004E465B /* SingleModifier.swift */,
-				E5FB35AB2964858D004E465B /* ModifierView.swift */,
+				E5FB35AB2964858D004E465B /* ModifyView.swift */,
 				E5FB35AD2964859E004E465B /* FilmView.swift */,
+				E5E30B9329654536004A0F8B /* LenView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -278,9 +281,10 @@
 			files = (
 				E5FB357E296484DB004E465B /* ContentView.swift in Sources */,
 				E5FB357C296484DB004E465B /* AurieaApp.swift in Sources */,
+				E5E30B9429654536004A0F8B /* LenView.swift in Sources */,
 				E5FB35AA29648580004E465B /* SingleModifier.swift in Sources */,
 				E5FB35AE2964859E004E465B /* FilmView.swift in Sources */,
-				E5FB35AC2964858D004E465B /* ModifierView.swift in Sources */,
+				E5FB35AC2964858D004E465B /* ModifyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

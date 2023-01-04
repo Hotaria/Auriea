@@ -6,18 +6,18 @@
 //
 
 import SwiftUI
+import UniformTypeIdentifiers
+
 
 struct ContentView: View {
     var body: some View {
-        HStack {
+        HStack (alignment: .center, spacing: 0){
             ModifyView()
             FilmView()
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            LenView()
         }
-        .padding()
+        .scaledToFit()
+
     }
 }
 

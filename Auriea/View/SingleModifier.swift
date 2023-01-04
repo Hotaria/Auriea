@@ -8,22 +8,50 @@
 import SwiftUI
 
 struct SingleModifier: View {
+    var PropertyName: String
+    var PropertyIcon: String
+    @State var PropertyValue: Double
+    @State private var speed = 50.0
+    @State private var isEditing = false
     var body: some View {
-        HStack {
-
-            Image(systemName: "plusminus.circle")
+        HStack (alignment: .top){
+            Image(systemName: PropertyIcon)
                 .resizable()
-                .frame(width: 50, height: 50)
+                .frame(width: 40, height: 40)
             Spacer()
-            Slider(value: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant(10)/*@END_MENU_TOKEN@*/)
+                .frame(width: 20)
+            VStack (alignment: .leading) {
+                HStack {
+                    Text(PropertyName + ":")
+                        .font(.headline)
+                    Text("\(PropertyValue)")
+                        .font(.headline)
+                }
+                Slider(
+                    value: $PropertyValue,
+                            in: -100...100,
+                            onEditingChanged: { editing in
+                                isEditing = editing
+                            }
+                )
+                .tint(Color("GloriousDark"))
+                .frame(width:300 ,height: 10)
+
+            }
      
         }
-        .padding(.all)
+        .foregroundColor(Color("GloriousDark"))
+        .frame(height: 80)
+
     }
 }
 
 struct SingleModifier_Previews: PreviewProvider {
     static var previews: some View {
-        SingleModifier()
+        SingleModifier(
+            PropertyName: "Exposure",
+            PropertyIcon: "plusminus.circle" ,
+            PropertyValue: 50
+        )
     }
 }
