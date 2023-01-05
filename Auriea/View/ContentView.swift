@@ -10,10 +10,14 @@ import UniformTypeIdentifiers
 
 
 struct ContentView: View {
+    @EnvironmentObject var Properties: MultiProp
     var body: some View {
-        HStack (alignment: .center, spacing: 0){
+        HStack (alignment: .center){
             ModifyView()
+                .environmentObject(Properties)
+            Spacer()
             FilmView()
+                .environmentObject(Properties)
             LenView()
         }
         .scaledToFit()
