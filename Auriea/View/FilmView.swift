@@ -7,18 +7,90 @@
 
 import SwiftUI
 import AppKit
+import UniformTypeIdentifiers
+
+struct ImageDocument: FileDocument {
+  static var readableContentTypes: [UTType] { [.jpeg, .png, .tiff] }
+  var image: NSImage
+  init(image: NSImage?) {
+    self.image = image ?? NSImage()
+  }
+  init(configuration: ReadConfiguration) throws {
+    guard let data = configuration.file.regularFileContents,
+          let image = NSImage(data: data)
+    else {
+      throw CocoaError(.fileReadCorruptFile)
+    }
+    self.image = image
+  }
+  func fileWrapper(configuration: WriteConfiguration) throws -> FileWrapper {
+    /* You can replace tiff representation with what you want to export */
+    return FileWrapper(regularFileWithContents: image.tiffRepresentation!)
+  }
+}
+
 
 
 struct FilmView: View {
     @EnvironmentObject var Properties: MultiProp
     @State private var fileUrl = ""
     @State private var openFile = false
+    @State private var saveFile = false
     @State private var img = NSImage(size: NSSize(width: 20, height: 20))
     var body: some View {
         
         VStack {
-        
             Text("\(fileUrl)").fontWeight(.bold)
+            HStack {
+                Button(action: {
+                    print("LOAD was tapped")
+                    openFile.toggle()
+                    
+                }) {
+                    Image(systemName:"plus.circle")
+                    Text("Open...")
+
+                    
+                }.fileImporter(isPresented: $openFile, allowedContentTypes: [.image]) { (res) in
+                    
+                    do{
+                        let fileUrl = try res.get()
+                        print(fileUrl)
+                        
+                        self.fileUrl = fileUrl.absoluteString
+                        
+                        let img = NSImage(contentsOf: fileUrl)
+                        self.img = img!
+                        
+                    } catch{
+                        print("Error happend")
+                    }
+                   
+                    
+                }
+                Button(action: {
+                    print("SAVE was tapped")
+                    saveFile.toggle()
+                    
+                }) {
+                    Image(systemName:"chevron.down.circle")
+                    Text("Save...")
+
+                }.fileExporter(
+                    isPresented: $saveFile,
+                    documents: [
+                        ImageDocument(image: img)
+                      ],
+                    contentType: UTType.png
+                ) { result in
+                    switch result {
+                    case .success(let url):
+                        print("Saved to \(url)")
+                    case .failure(let error):
+                        print(error.localizedDescription)
+                    }
+                }
+            }
             Spacer()
             Image(nsImage: img)
                 .resizable()
@@ -27,35 +99,8 @@ struct FilmView: View {
                 .brightness(Properties.Proper[1].value)
                 .hueRotation(Angle.degrees(Properties.Proper[10].value * 180))
                 .saturation(Properties.Proper[7].value + 1)
-                .contrast(Properties.Proper[5].value + 1)
-            
-            
-            Button(action: {
-                print("Button was tapped")
-                openFile.toggle()
-                
-            }) {
-                Image(systemName:"plus.circle")
-                Text("Open...")
+                .contrast(Properties.Proper[4].value + 1)
 
-                
-            }.fileImporter(isPresented: $openFile, allowedContentTypes: [.image]) { (res) in
-                
-                do{
-                    let fileUrl = try res.get()
-                    print(fileUrl)
-                    
-                    self.fileUrl = fileUrl.absoluteString
-                    
-                    let img = NSImage(contentsOf: fileUrl)
-                    self.img = img!
-                    
-                } catch{
-                    print("Error happend")
-                }
-               
-                
-            }
             Spacer()
 
             /*
@@ -76,6 +121,7 @@ struct FilmView: View {
 
 struct FilmView_Previews: PreviewProvider {
     static var previews: some View {
-        FilmView(   )
+        FilmView()
+            .environmentObject(MultiProp())
     }
 }

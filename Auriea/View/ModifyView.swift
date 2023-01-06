@@ -67,5 +67,6 @@ struct ModifyView: View {
 struct ModifyView_Previews: PreviewProvider {
     static var previews: some View {
         ModifyView()
+            .environmentObject(MultiProp())
     }
 }

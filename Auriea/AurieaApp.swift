@@ -15,7 +15,7 @@ struct SingleProp: Identifiable {
 }
 class MultiProp: ObservableObject {
     @Published var Proper : [SingleProp] = [
-    SingleProp(name: "Exposure", icon: "line.3.crossed.swirl.circle", value: 0),
+    SingleProp(name: "Exposure", icon: "camera.aperture", value: 0),
     SingleProp(name: "Brilliance", icon: "sun.max.circle", value: 0),
     SingleProp(name: "Highlights", icon: "plusminus.circle", value: 0),
     SingleProp(name: "Shadows", icon: "moon.circle", value: 0),

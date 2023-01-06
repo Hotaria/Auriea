@@ -26,11 +26,14 @@ struct ContentView: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
+    //@EnvironmentObject var Properties: MultiProp
     static var previews: some View {
         Group {
                     ContentView()
+                        .environmentObject(MultiProp())
                         .preferredColorScheme(.light)
                     ContentView()
+                    .environmentObject(MultiProp())
                         .preferredColorScheme(.dark)
                 }
     }
