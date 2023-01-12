@@ -36,7 +36,7 @@ struct FilmView: View {
     @State private var fileUrl = ""
     @State private var openFile = false
     @State private var saveFile = false
-    @State private var img = NSImage(size: NSSize(width: 20, height: 20))
+    @State private var img = NSImage(imageLiteralResourceName: "InitialImage")
     var body: some View {
         
         VStack {
@@ -94,12 +94,12 @@ struct FilmView: View {
             Spacer()
             Image(nsImage: img)
                 .resizable()
+                .padding(.all)
                 .scaledToFit()
-                //.frame(minWidth: 20, idealWidth: 20 ,maxWidth: 1080, minHeight: 20,idealHeight: 20, maxHeight: 960)
                 .brightness(Properties.Proper[1].value)
-                .hueRotation(Angle.degrees(Properties.Proper[10].value * 180))
-                .saturation(Properties.Proper[7].value + 1)
-                .contrast(Properties.Proper[4].value + 1)
+                .hueRotation(Angle.degrees(Properties.Proper[4].value * 180))
+                .saturation(Properties.Proper[3].value + 1)
+                .contrast(Properties.Proper[2].value + 1)
 
             Spacer()
 
@@ -114,8 +114,8 @@ struct FilmView: View {
              */
         }
         .scaledToFit()
-        .frame(width: 900)
-        .background(Color("GloriousLightGrey"))
+        .frame(minWidth:0, maxWidth: 1000, minHeight: 400,maxHeight: 10000)
+        //.background(Color("GloriousLightGrey"))
     }
 }
 

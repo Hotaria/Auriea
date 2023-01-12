@@ -39,28 +39,19 @@ struct ModifyView: View {
                             .frame(width:200 ,height: 10)
 
                         }
-                        
-                 
                     }
-                    .frame(width:300, height: 80)
+                    .frame(width: 300, height: 60)
                     .background(Color("GloriousWhite"))
                     .foregroundColor(Color("GloriousDark"))
-                    .clipShape(RoundedRectangle(cornerRadius: 13)
-                    )
-                    .shadow(color: Color("LightShadowGrey"),radius: 3)
-                        //.stroke(Color.blue, lineWidth: 2))
-                    .padding(.horizontal)
-                    
-                    Divider()
                 }
-                
+                .padding(.vertical, 2)
+                Divider()
+                    .padding(0)
             }
         }
+        .padding(.vertical, 10)
         .background(Color("GloriousWhite"))
-        .scaledToFit()
-        
-        
-        //.frame(width: 400, height:600)
+        .frame(minWidth: 300, maxWidth: 300, minHeight: 600, maxHeight: 10000)
     }
 }
 
